@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/flow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/flow_btn"
+        app:layout_constraintTop_toTopOf="@+id/flow_btn" />
+
+    <Button
+        android:id="@+id/flow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="18dp"
+        android:text="FLOW"
+        app:layout_constraintStart_toStartOf="@+id/shared_flow_btn"
+        app:layout_constraintTop_toBottomOf="@+id/shared_flow_btn" />
+
+    <Button
+        android:id="@+id/shared_flow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="SHAREDFLOW"
+        app:layout_constraintStart_toStartOf="@+id/state_flow_btn"
+        app:layout_constraintTop_toBottomOf="@+id/state_flow_btn" />
+
+    <TextView
+        android:id="@+id/shared_flow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/shared_flow_btn"
+        app:layout_constraintTop_toTopOf="@+id/shared_flow_btn" />
+
+    <Button
+        android:id="@+id/state_flow_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="STATEFLOW"
+        app:layout_constraintEnd_toEndOf="@+id/livedata_btn"
+        app:layout_constraintTop_toBottomOf="@+id/livedata_btn" />
+
+    <TextView
+        android:id="@+id/state_flow_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/state_flow_btn"
+        app:layout_constraintTop_toTopOf="@+id/state_flow_btn" />
+
+    <TextView
+        android:id="@+id/live_data_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/livedata_btn"
+        app:layout_constraintTop_toTopOf="@+id/livedata_btn" />
+
+    <Button
+        android:id="@+id/livedata_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="68dp"
+        android:text="LIVEDATA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
